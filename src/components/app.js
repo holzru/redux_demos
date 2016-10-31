@@ -7,7 +7,8 @@ export default class App extends Component {
       <div>
         <Link to="/youtube">Youtube Player</Link><br/>
         <Link to="/weather">US Weather</Link><br/>
-        <Link to="/blog">Blog</Link>
+        <Link to="/blog">Blog</Link><br/>
+        <Link to="/">Main</Link>
         {this.props.children}
       </div>
     );

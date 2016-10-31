@@ -6,7 +6,8 @@ export default class App extends Component {
     return (
       <div>
         <Link to="/youtube">Youtube Player</Link><br/>
-        <Link to="/weather">US Weather</Link>
+        <Link to="/weather">US Weather</Link><br/>
+        <Link to="/blog">Blog</Link>
         {this.props.children}
       </div>
     );

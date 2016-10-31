@@ -4,33 +4,40 @@ import { Link } from 'react-router';
 
 
 class Detail extends Component {
+  static contextTypes = {
+    router: PropTypes.object
+  };
+
   sliderRedirect(event) {
     switch(event.target.src) {
-      case 'http://lorempixel.com/1000/600/nature/1/':
-
+      case 'https://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_650,w_1200/v1477955683/youtube_lb4lnn.jpg':
+        return this.context.router.push('/youtube');
+      case 'https://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_650,w_1200/v1477955838/weather_ra1ivt.jpg':
+        return this.context.router.push('/weather');
+      case 'https://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_650,w_1200/v1477955833/blog_fp3nil.jpg':
+        return this.context.router.push('/blog');
     }
   }
   render() {
 
     const images = [
       {
-        original: 'http://lorempixel.com/1000/600/nature/1/',
+        original: 'https://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_650,w_1200/v1477955683/youtube_lb4lnn.jpg',
         originalClass: 'featured-slide',
-        id: "youtube"
       },
       {
-        original: 'http://lorempixel.com/1000/600/nature/2/',
+        original: 'https://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_650,w_1200/v1477955838/weather_ra1ivt.jpg',
       },
       {
-        original: 'http://lorempixel.com/1000/600/nature/3/',
+        original: 'https://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_650,w_1200/v1477955833/blog_fp3nil.jpg',
       }
     ]
 
     return (
-      <div onClick={this.navigation}>
+      <div className="slider" onClick={this.navigation}>
         <ImageGallery
         ref={i => this._imageGallery = i}
-        onClick={this.sliderRedirect}
+        onClick={this.sliderRedirect.bind(this)}
         items={images}
         slideInterval={2000}
         autoPlay={true}

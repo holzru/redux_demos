@@ -9,12 +9,12 @@ class WeatherList extends Component {
     const temps = weatherData.list.map((weather) => weather.main.temp);
     const humidities = weatherData.list.map((weather) => weather.main.humidity);
     const { lon, lat } = weatherData.city.coord;
-    const convertedTemps = temps.map(temp => this.tempConverter(temp)).join(', ');
+    const convertedTemps = temps.map(temp => this.tempConverter(temp));
 
     return (
       <tr key={name}>
         <td><GoogleMap lon={lon} lat={lat}/></td>
-        <td><Chart data={temps} color="red" units="K"/></td>
+        <td><Chart data={convertedTemps} color="red" units="F"/></td>
         <td><Chart data={humidities} color="black" units="%"/></td>
       </tr>);
   }

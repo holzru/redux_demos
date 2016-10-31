@@ -7,7 +7,23 @@
 td, th {
   vertical-align: middle !important;
   text-align: center !important;
+  height: 250px;
+  width: 250px;
+}
 
+.slider {
+  position: absolute;
+  max-height: 50%;
+  max-width: 60%;
+  left: 20%;
+  top: 10%
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
 }
 
 td:first-of-type {

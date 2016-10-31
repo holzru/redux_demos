@@ -37,6 +37,6 @@
     "react-sparklines": "^1.6.0",
     "redux": "^3.0.4",
     "redux-promise": "^0.5.3",
-    "ytsearch": "^1.0.4"
+    "youtube-api-search": "0.0.5"
   }
 }

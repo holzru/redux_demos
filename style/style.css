@@ -19,6 +19,13 @@ td, th {
   top: 10%
 }
 
+.video-detail .details {
+  margin-top: 10px;
+  padding: 10px;
+  border:  1px solid #ddd;
+  border-radius: 4px;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;

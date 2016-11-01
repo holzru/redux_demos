@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component, PropTypes} from 'react';
 import { connect } from 'react-redux';
 import { fetchPost, deletePost } from "../../actions/blog_actions";
 import { Link } from 'react-router';
@@ -8,6 +8,10 @@ class BlogDetail extends Component {
   constructor(props) {
     super(props);
   }
+
+  static contextTypes = {
+    router: PropTypes.object
+  };
 
   componentWillMount() {
     this.props.fetchPost(this.props.params.id);
@@ -25,7 +29,7 @@ class BlogDetail extends Component {
       return <div>Loading...</div>;
     }
     return (
-      <div>
+      <div className='component'>
         <button
           className="btn btn-danger pull-xs-right"
           onClick={this.onDeleteClick.bind(this)}>

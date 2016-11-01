@@ -8,7 +8,7 @@ import VideoList from './video_list';
 
 class YoutubeIndex extends Component {
   render() {
-    return (<div className="youtube-player">
+    return (<div className="component">
               <SearchBar />
               <VideoDetail video={this.props.youtube.videoSelected} />
               <VideoList videos={this.props.youtube.videos} />
@@ -22,9 +22,3 @@ function mapStateToProps({youtube}) {
 }
 
 export default connect(mapStateToProps)(YoutubeIndex);
-
-// constructor(props) {
-//   super(props);
-//
-//   this.state = {videos: this.props.youtube.videos, videoSelected: this.props.youtube.videoSelected};
-// }

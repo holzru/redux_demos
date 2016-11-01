@@ -5,7 +5,7 @@ import WeatherList from './weather_list';
 
 class WeatherIndex extends Component {
   render() {
-    return (<div className="weather-display">
+    return (<div className="component">
               <SearchBar />
               <WeatherList />
             </div>

@@ -23,16 +23,17 @@ class BlogIndex extends Component {
 
   render() {
     return (
-        <div>
-          List of Posts
-          <Link to='/blog/new' className="btn btn-primary">
-            Add A Post
-          </Link>
+        <div className="component">
+          <div className="blog-menu">
+            <h3>Posts</h3>
+            <Link to='/blog/new' className="btn btn-primary">
+              Add A Post
+            </Link>
+          </div>
           <div>
-          <h3>Posts</h3>
-          <ul className='list-group'>
-            {this.renderPosts()}
-          </ul>
+            <ul className='list-group'>
+              {this.renderPosts()}
+            </ul>
           </div>
         </div>
     );

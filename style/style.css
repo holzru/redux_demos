@@ -6,7 +6,14 @@
   max-width: 100%;
 }
 
-.youtube-player {
+.blog-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.component {
   position: relative;
   margin: 20px 0px;
   max-width: 80%;

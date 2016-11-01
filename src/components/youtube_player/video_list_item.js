@@ -17,7 +17,7 @@ class VideoListItem extends Component {
             </div>
           </div>
           <div className="media-body">
-            <div className="media-heading">{this.props.video.snippet.title}</div>
+            <div className="media-heading">Title: {this.props.video.snippet.title}</div>
           </div>
         </li>
 

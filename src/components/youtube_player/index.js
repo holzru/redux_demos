@@ -8,7 +8,7 @@ import VideoList from './video_list';
 
 class YoutubeIndex extends Component {
   render() {
-    return (<div>
+    return (<div className="youtube-player">
               <SearchBar />
               <VideoDetail video={this.props.youtube.videoSelected} />
               <VideoList videos={this.props.youtube.videos} />

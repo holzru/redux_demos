@@ -1,7 +1,16 @@
 @import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
-.input-group{
+.input-group {
+  position: relative;
   margin: 20px 0px;
+  max-width: 100%;
+}
+
+.youtube-player {
+  position: relative;
+  margin: 20px 0px;
+  max-width: 80%;
+  left: 10%
 }
 
 td, th {
@@ -26,14 +35,35 @@ td, th {
   border-radius: 4px;
 }
 
+.main {
+  width: 100%
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin: 0 auto;
   justify-content: space-around;
+  background-color: #3b5998;
+  height: 30px;
+}
+
+.navbar-item {
+  color: white;
+  font-style: bold;
+}
+
+.navbar-item:hover {
+  color: white;
+  cursor: pointer;
 }
 
 td:first-of-type {
   height: 200px;
   width: 250px;
+}
+
+.list-group-item:hover {
+  cursor: pointer
 }

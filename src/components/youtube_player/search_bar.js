@@ -12,6 +12,8 @@ class SearchBar extends Component {
     super(props);
     this.state = { term: "" };
     this.onInputChange = this.onInputChange.bind(this);
+
+    this.videoSearch("band of horses");
   }
 
   videoSearch(term) {

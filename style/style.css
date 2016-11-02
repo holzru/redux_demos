@@ -6,6 +6,37 @@
   max-width: 100%;
 }
 
+.about {
+  position: fixed;
+  top: 65%;
+  max-width: 80%;
+}
+
+.about-title {
+  text-decoration: underline;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #3b5998;
+  height: 30px;
+}
+
+.footer-item {
+  color: white;
+  font-style: bold;
+}
+
+.main {
+  width: 100%;
+  position: relative;
+}
+
 .blog-menu {
   display: flex;
   flex-direction: row;
@@ -42,9 +73,7 @@ td, th {
   border-radius: 4px;
 }
 
-.main {
-  width: 100%
-}
+
 
 .nav-bar {
   display: flex;
@@ -62,6 +91,11 @@ td, th {
 }
 
 .navbar-item:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-item:active {
   color: white;
   cursor: pointer;
 }

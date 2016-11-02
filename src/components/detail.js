@@ -10,11 +10,11 @@ class Detail extends Component {
 
   sliderRedirect(event) {
     switch(event.target.src) {
-      case 'https://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_850,w_1200/v1477955683/youtube_lb4lnn.jpg':
+      case 'http://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_900,w_1200/v1478129349/youtube_comp_asrtv8.jpg':
         return this.context.router.push('/youtube');
-      case 'https://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_850,w_1200/v1477955838/weather_ra1ivt.jpg':
+      case 'http://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_900,w_1200/v1478129337/weather_comp_amwo2y.jpg':
         return this.context.router.push('/weather');
-      case 'https://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_850,w_1200/v1477955833/blog_fp3nil.jpg':
+      case 'http://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_900,w_1200/v1478129344/blog_comp_carngd.jpg':
         return this.context.router.push('/blog');
     }
   }
@@ -22,29 +22,39 @@ class Detail extends Component {
 
     const images = [
       {
-        original: 'https://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_850,w_1200/v1477955683/youtube_lb4lnn.jpg',
+        original: 'http://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_900,w_1200/v1478129349/youtube_comp_asrtv8.jpg',
         originalClass: 'featured-slide',
       },
       {
-        original: 'https://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_850,w_1200/v1477955838/weather_ra1ivt.jpg',
+        original: 'http://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_900,w_1200/v1478129337/weather_comp_amwo2y.jpg',
       },
       {
-        original: 'https://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_850,w_1200/v1477955833/blog_fp3nil.jpg',
+        original: 'http://res.cloudinary.com/dywbzmakl/image/upload/c_scale,h_900,w_1200/v1478129344/blog_comp_carngd.jpg',
       }
     ]
 
     return (
-      <div className="slider" onClick={this.navigation}>
-        <ImageGallery
-        ref={i => this._imageGallery = i}
-        onClick={this.sliderRedirect.bind(this)}
-        items={images}
-        slideInterval={2000}
-        autoPlay={true}
-        onImageLoad={this.handleImageLoad}
-        showBullets={true}
-        showThumbnails={false}
-        />
+      <div className="component">
+        <div className="slider" onClick={this.navigation}>
+          <ImageGallery
+          ref={i => this._imageGallery = i}
+          onClick={this.sliderRedirect.bind(this)}
+          items={images}
+          slideInterval={2000}
+          autoPlay={true}
+          onImageLoad={this.handleImageLoad}
+          showBullets={true}
+          showThumbnails={false}
+          />
+        </div>
+        <div className="about">
+          <h3 className="about-title">About:</h3>
+          <p> This is a demo site with 3 simple redux components, with very minimal styling, more about the pattern and code.
+              You can check out the links above or just click on the picture of the
+              component in the slider above. I decided to join together 3 demo
+              projects from Stephen Griders React-Redux course on Udemy
+              into a demo site. Please check out my LinkedIn and/or Github. Thanks!</p>
+        </div>
       </div>
     );
   }

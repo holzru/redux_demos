@@ -40,9 +40,12 @@ class BlogNew extends Component {
     return(
       <div className="component">
         <form onSubmit={this.onSubmit.bind(this)}>
-          <input id="title" className="form-control" value={this.state.title} onChange={this.onFormInput}/>
-          <input id="categories" className="form-control" value={this.state.categories} onChange={this.onFormInput}/>
-          <input id="content" className="form-control" value={this.state.content} onChange={this.onFormInput}/>
+          Title:
+          <input id="title" className="form-control" value={this.state.title} onChange={this.onFormInput}/><br/>
+          Categories:
+          <input id="categories" className="form-control" value={this.state.categories} onChange={this.onFormInput}/><br/>
+          Content:
+          <textarea id="content" className="form-control" value={this.state.content} onChange={this.onFormInput}/><br/>
           <button type="submit" className="btn btn-primary">Submit</button>
         </form>
       </div>

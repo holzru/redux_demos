@@ -12,6 +12,10 @@
   left: 10%;
 }
 
+#container {
+  min-width: 950px;
+}
+
 /*Display/Splash Page Styling*/
 .nav-bar {
   display: flex;
@@ -40,8 +44,8 @@
 
 .slider {
   position: absolute;
-  max-height: 50%;
-  max-width: 60%;
+  max-height: 700px !important;
+  max-width: 50vw;
   left: 20%;
   top: 10%
 }
@@ -52,13 +56,13 @@
 
 .about {
   position: fixed;
-  top: 75%;
+  top: 80%;
   max-width: 80%;
   min-width: 650px;
 }
 
-.about-title {
-  text-decoration: underline;
+.about-detail {
+  text-align: center;
 }
 
 .footer {
@@ -111,7 +115,6 @@ td:first-of-type {
   border:  1px solid #ddd;
   border-radius: 4px;
 }
-
 
 .list-group-item:hover {
   cursor: pointer

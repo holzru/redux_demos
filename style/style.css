@@ -50,8 +50,8 @@
   top: 10%
 }
 
-.image-gallery-bullet {
-  background-color: blue !important;
+.image-gallery-bullet.active {
+  background-color: #3b5998 !important;
 }
 
 .about {
@@ -62,7 +62,7 @@
 }
 
 .about-detail {
-  text-align: center;
+  text-align: center !important;
 }
 
 .footer {

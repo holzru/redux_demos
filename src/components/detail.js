@@ -48,9 +48,9 @@ class Detail extends Component {
           />
         </div>
         <div className="about">
-          <span className="about-detail"> This is a demo site with 3 simple redux components, with very minimal styling, more about the pattern and code.
+          <div className="about-detail"> This is a demo site with 3 simple redux components, with very minimal styling, more about the pattern and code.
               You can check out the links above or just click on the picture of the
-              component in the slider above.</span>
+              component in the slider above.</div>
         </div>
       </div>
     );

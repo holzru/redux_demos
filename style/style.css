@@ -42,9 +42,13 @@
   cursor: pointer;
 }
 
+/*.image-gallery-image {
+  height: 100px;
+}*/
+
 .slider {
   position: absolute;
-  max-height: 700px !important;
+  max-height: 10px !important;
   max-width: 50vw;
   left: 20%;
   top: 10%
